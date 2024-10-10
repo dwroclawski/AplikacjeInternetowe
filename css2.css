@@ -1,0 +1,167 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0 5%;
+    background-image: url('cats_background.png'); 
+    background-size: cover; 
+    color: #ffffff;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+p{
+    font-size: 16px;
+    @media (max-width: 500px) {
+        font-size: 12px;
+}
+}
+.american-cat {
+    position: relative;
+    padding: 10px; 
+    text-align: center;
+    color: #000000;
+    font-weight: bold;
+}
+main {
+    padding: 20px 20px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    border-radius: 3%;
+}
+header h1 {
+    font-size: 60px;
+    color: #ffffff; 
+    text-align: center;
+
+    @media (max-width: 500px) {
+            font-size: 48px;
+    }
+}
+
+header h2 {
+    font-size: 24px;
+    text-align: center;
+    @media (max-width: 500px) {
+        font-size: 20px;
+}
+}
+
+.american-cat::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(
+        to bottom, 
+        #BC002D 0%, #BC002D 7.6923%, 
+        #FFFFFF 7.6923%, #FFFFFF 15.3846%, 
+        #BC002D 15.3846%, #BC002D 23.0769%, 
+        #FFFFFF 23.0769%, #FFFFFF 30.7692%, 
+        #BC002D 30.7692%, #BC002D 38.4615%, 
+        #FFFFFF 38.4615%, #FFFFFF 46.1538%, 
+        #BC002D 46.1538%, #BC002D 53.8462%, 
+        #FFFFFF 53.8462%, #FFFFFF 61.5385%, 
+        #BC002D 61.5385%, #BC002D 69.2308%, 
+        #FFFFFF 69.2308%, #FFFFFF 76.9231%, 
+        #BC002D 76.9231%, #BC002D 84.6154%, 
+        #FFFFFF 84.6154%, #FFFFFF 92.3077%, 
+        #BC002D 92.3077%, #BC002D 100%
+    );
+    z-index: -1; 
+}
+
+.american-cat::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0; 
+    height: 50%;
+    width: 20%; 
+    background-color: #002868; 
+    z-index: 2; 
+}
+
+
+
+.polish-cat {
+    background: linear-gradient(to bottom, #FFFFFF 50%, #BC002D 50%);
+    padding: 10px;
+    text-align: center;
+    color: black;
+}
+
+.japanese-cat {
+    color: black; 
+    background-color: #FFFFFF;
+    padding: 10px;
+    text-align: center;
+    position: relative; 
+    z-index: 1;
+}
+
+.japanese-cat::before {
+    content: ""; 
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    width: 30px; 
+    height: 30px; 
+    background-color: #BC002D;
+    border-radius: 50%; 
+    transform: translate(-0%, -50%);
+    z-index: -1; 
+}
+
+.japanese-cat h3 {
+    position: relative; 
+    z-index: 1; 
+    margin: 0; 
+}
+h3 {
+    font-size: 1.5em;
+    margin: 1em 0;
+    text-align: center; 
+    z-index: 5;  
+    @media (max-width: 500px) {
+        font-size: 20px;
+}
+}
+ul {
+    list-style-type: none; 
+    padding: 0;
+    float: right;
+    width: 50%;
+    @media (max-width: 500px) {
+        font-size: 12px;
+}
+}
+footer {
+    text-align: center ;
+    opacity: 1; 
+    background-color: rgba(0,0,0,0.7); 
+    padding: 5px;
+    bottom: 0;
+    
+    margin-left: -5.5%;
+    margin-right: -5.5%;
+    clear: both;
+}
+footer a {
+    color: #BC002D; 
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+img {
+    max-width: 50%;  
+    max-height: 50%;    
+    float: left;
+    width: 50%;
+    border-radius: 10%;
+}
+
