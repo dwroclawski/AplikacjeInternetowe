@@ -1,0 +1,139 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+    font-family: Arial;
+    background-image: url(background.avif);
+    background-size: auto;
+    background-repeat: repeat;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+li input[type="checkbox"] {
+    margin-right: 10px;
+}
+.task-text {
+    flex-grow: 1;
+    margin-left: 10px;
+    word-break: break-word;
+    flex:1;
+}
+.task-date {
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+h1 {
+    font-family: "brush script mt", cursive;
+    color: #b05050;
+    background-color: #fffcfc;
+    border-radius: 200px;
+    border-color: #b05050;
+    border-width: 5px;
+    border-style: solid;
+    text-align: center;
+    font-size: 40px;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    background-color: #c48c8c;
+    border: 5px solid #b05050;
+    margin: 0 auto;
+    padding: 20px;
+    width: 50%;
+}
+.completed {
+    text-decoration: line-through;
+    color: #b05050;
+}
+input[type="checkbox"]:checked {
+    accent-color: #b05050;
+}
+
+#searchInput {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #b05050;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#taskList {
+    list-style: none;
+    padding: 0;
+}
+
+#taskList li {
+    background: #ce9c9c;
+    padding: 10px;
+    border-bottom: 1px solid #b05050;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#taskList li.editing input {
+    width: 100%;
+    padding: 5px;
+}
+
+button.delete-btn {
+    background-color: #b05050;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+button.delete-btn:hover {
+    background-color: darkred;
+}
+
+.add-task {
+    display: flex;
+    gap: 10px;
+    
+}
+
+#taskInput, #taskDate {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #b05050;
+    border-radius: 5px;
+
+}
+
+
+#addTaskBtn {
+    padding: 10px;
+    background-color: rgb(18, 82, 18);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#addTaskBtn:hover {
+    background-color: rgb(10, 49, 10);
+}
+
+.highlight {
+    background-color: #b05050;
+}
