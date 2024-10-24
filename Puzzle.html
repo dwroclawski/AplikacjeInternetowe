@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GeoPuzzle</title>
+    <link rel="stylesheet" href="leaflet-1.7.1/leaflet.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="leaflet-1.7.1/leaflet-src.js"></script>
+    <script src="leaflet-1.7.1/leaflet-providers.js"></script>
+    <script src="leaflet-1.7.1/leaflet-image.js"></script>
+    
+    
+</head>
+<body>
+    <h1>Welcome To GeoPuzzle!</h1>
+    <div class="map-container">
+        <div id="map"></div>
+        <canvas id="rasterMap"></canvas>
+    </div>
+
+    <button id="getLocation">Get Current Location</button>
+    <button id="saveButton">Solve The Puzzle</button>
+
+    <br></br>
+
+    <div class="drag-target" id="puzzle-target"></div>
+    <div class="puzzle-container" id="puzzle-container"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
